@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/ba
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
 http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd">
 	<salesforce:sfdc-config name="Salesforce_Config" doc:name="Salesforce Config" doc:id="cfaed9c6-5caa-4aac-bd5b-d115616bf829" >
-		<salesforce:cached-basic-connection username="monikapaygude@deloitte.com" password="Monika@12" securityToken="bfJAxRiFnifZM1EwFfpDhUtQG" url="https://login.salesforce.com/services/Soap/u/43.0" />
+		<salesforce:cached-basic-connection username="avharwani@deloitte.com.sfdcipoc.dipune" password="sfdcipoc@2019" securityToken="bG756bL3Vp38oniys1OOD0td" url="https://test.salesforce.com/services/Soap/u/43.0" />
 	</salesforce:sfdc-config>
 	<flow name="testFlow" doc:id="fc74f290-8ccd-42e8-afd0-3b7d98cf4926" >
 		<scheduler doc:name="Scheduler" doc:id="f7be445c-6bb7-45db-9677-e0ce977f989f" >
@@ -20,7 +20,7 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
 				<fixed-frequency frequency="5" timeUnit="MINUTES"/>
 			</scheduling-strategy>
 		</scheduler>
-		<set-payload value="This is CI/CD implementaion - changed anypoint account" doc:name="Set Payload" doc:id="56ee2389-c420-4860-86aa-2ce5916793cc" mimeType="application/json"/>
+		<set-payload value="This is CI/CD demo" doc:name="Set Payload" doc:id="56ee2389-c420-4860-86aa-2ce5916793cc" mimeType="application/json"/>
 		<logger level="INFO" doc:name="Logger" doc:id="582d1851-d70b-4a8e-9430-5e419a09f744" message="#[payload]"/>
 	</flow>
 </mule>
